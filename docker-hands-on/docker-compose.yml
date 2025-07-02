@@ -12,6 +12,7 @@ services:
     networks:
       - app-network
 
+
   order-service:
     image: ram1uj/ecom-app-order-service
     restart: always
