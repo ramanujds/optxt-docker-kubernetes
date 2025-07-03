@@ -31,7 +31,7 @@ services:
       DB_USER: root
       DB_PASSWORD: password
     ports:
-      - "8200:8200"
+      - "8200-8299:8200"
     depends_on:
       - mysql
     networks:
@@ -47,7 +47,7 @@ services:
       DB_USER: root
       DB_PASSWORD: password
     ports:
-      - "8100:8100"
+      - "8100-8199:8100"
     depends_on:
       - mysql
     networks:
