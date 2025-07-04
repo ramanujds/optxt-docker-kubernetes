@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: spring-boot
+#  namespace: dev
 spec:
   selector:
     matchLabels:
@@ -20,6 +21,6 @@ spec:
           env:
             - name: APP_MESSAGE
               valueFrom:
-                configMapKeyRef:
-                  key: message
-                  name: spring-boot-config
+                secretKeyRef:
+                  key: SECRET_MESSAGE
+                  name: spring-boot-secret
