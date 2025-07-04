@@ -14,3 +14,7 @@ kubectl scale deployment easy-recipes --replicas=3
 
 kubectl set image deployment/easy-recipes easy-recipes=ram1uj/flask-app
 
+kubectl config set-context --current --namespace=dev
+
+kubectl create deployment easy-recipes --image=ram1uj/easy-recipes -n dev
+
