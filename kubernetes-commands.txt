@@ -18,3 +18,13 @@ kubectl config set-context --current --namespace=dev
 
 kubectl create deployment easy-recipes --image=ram1uj/easy-recipes -n dev
 
+Helm Commands
+
+helm create easy-recipes-chart
+
+helm install easy-recipes easy-recipes-chart
+
+helm upgrade easy-recipes easy-recipes-chart
+
+helm uninstall easy-recipes
+
